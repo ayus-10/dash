@@ -20,7 +20,7 @@ const App = () => {
         activeComponent={activeComponent}
       />
       <div className="flex flex-col justify-between bg-slate-100 col-span-5 overflow-y-auto h-full">
-        <main className="">
+        <main className="grow">
           {activeComponent === "home" && <Home />}
           {activeComponent === "about" && <About />}
           {activeComponent === "services" && <Services />}

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-200 text-gray-900 flex justify-between items-center">
       <p className="md:p-4 p-2 md:text-base text-sm">
-        Copyright &#169; 2023 DASH. All rights reserved.
+        Copyright &#169; 2023 DASH.
       </p>
       <div className="inline-flex md:p-4 p-2 gap-4 text-lg">
         <a href="#">
