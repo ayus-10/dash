@@ -9,7 +9,7 @@ const Sidebar = (props) => {
 
     return (
         <header className='col-span-1'>
-            <nav className='bg-slate-900 h-screen flex flex-col'>
+            <nav className='bg-slate-900 h-full flex flex-col'>
                 <div className='text-white text-xl'>
                     <div className='flex items-center justify-center m-4 cursor-pointer gap-1'
                         onClick={() => props.onButtonClick('home')}>
@@ -41,10 +41,10 @@ const Sidebar = (props) => {
                         <span className='md:inline hidden'>Pricing</span>
                     </div>
                     <div
-                        className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${active === 'support' ? 'bg-slate-800' : 'bg-slate-700'}`}
-                        onClick={() => props.onButtonClick('support')}>
+                        className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${active === 'contact' ? 'bg-slate-800' : 'bg-slate-700'}`}
+                        onClick={() => props.onButtonClick('contact')}>
                         <BiSupport className='inline flex-shrink-0' />
-                        <span className='md:inline hidden'>Support</span>
+                        <span className='md:inline hidden'>Contact</span>
                     </div>
                 </div>
             </nav>
