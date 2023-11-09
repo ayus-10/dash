@@ -2,7 +2,7 @@ import React from "react";
 import { PiGearSixBold } from "react-icons/pi";
 import { MdInfo } from "react-icons/md";
 import { BiDollarCircle, BiSupport, BiSolidHome } from "react-icons/bi";
-import Logo from "../assets/react.svg";
+import Logo from "../assets/logo.png";
 
 const Sidebar = (props) => {
   var active = props.activeComponent;
@@ -14,7 +14,7 @@ const Sidebar = (props) => {
           className="flex items-center justify-center m-4 cursor-pointer gap-1"
           onClick={() => props.onButtonClick("home")}
         >
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" className="max-h-12" />
           <h1 className="lg:text-4xl text-3xl md:block hidden">DASH</h1>
         </div>
         <div

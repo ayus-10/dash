@@ -17,7 +17,7 @@ const Home = () => {
     <section className="h-full flex flex-col justify-between gap-8 text-gray-900">
       <div className="lg:grid lg:grid-cols-5 lg:justify-between lg:items-center lg:gap-4 md:p-12 p-4">
         <div className="lg:col-span-3 mb-8 lg:mb-0">
-          <h1 className="text-sky-700 md:text-4xl text-3xl font-medium uppercase mb-4">
+          <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase md:mb-4 mb-2">
             Welcome to Dash!
           </h1>
           <p className="md:text-lg text-base">

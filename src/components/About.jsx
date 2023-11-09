@@ -61,7 +61,7 @@ const About = () => {
   return (
     <div className="md:p-12 p-4">
       <div className="text-gray-900 md:mb-8 mb-4">
-        <h1 className="text-sky-700 md:text-4xl text-3xl font-medium uppercase mb-2">
+        <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase mb-2">
           About the company
         </h1>
         <p className="md:text-lg text-base">
