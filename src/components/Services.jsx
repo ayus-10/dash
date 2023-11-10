@@ -55,7 +55,7 @@ const Services = () => {
   return (
     <div className="md:p-12 p-4">
       <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase md:mb-4 mb-2">
-        What do We offer?
+        Services We offer
       </h1>
       <div className="lg:grid lg:grid-cols-2 flex flex-col text-gray-900 md:gap-4 gap-2">
         {serviceItems.map((serviceItem, index) => (
@@ -63,7 +63,7 @@ const Services = () => {
             className="border border-slate-300 p-2 md:gap-4 gap-2 rounded-md grid grid-cols-3 items-center justify-between hover:scale-105 ease-in-out duration-300 cursor-default"
             key={index}
           >
-            <div className="col-span-1 rounded-sm overflow-hidden h-fit w-fit">
+            <div className="col-span-1 rounded-md overflow-hidden h-fit w-fit">
               <img
                 src={serviceItem.img}
                 className="md:h-20 sm:h-16 h-12 w-auto"

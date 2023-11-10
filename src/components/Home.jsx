@@ -35,20 +35,20 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="md:p-8 p-4 flex md:flex-row flex-col gap-4 items-center justify-around">
-        <div className="p-4 text-center">
+      <div className="p-12 flex md:flex-row flex-col gap-4 items-center justify-around">
+        <div className="p-4 text-center border border-slate-300 rounded-lg w-full h-fit">
           <p className="md:text-5xl text-4xl">
             <CountUp end={3100} />+
           </p>
           <span className="md:text-2xl text-xl">Customers</span>
         </div>
-        <div className="p-4 text-center">
+        <div className="p-4 text-center border border-slate-300 rounded-lg w-full h-fit">
           <p className="md:text-5xl text-4xl">
             <CountUp end={13} />
           </p>
           <span className="md:text-2xl text-xl">Years</span>
         </div>
-        <div className="p-4 text-center">
+        <div className="p-4 text-center border border-slate-300 rounded-lg w-full h-fit">
           <p className="md:text-5xl text-4xl">
             <CountUp end={131} />+
           </p>
@@ -67,7 +67,7 @@ const Home = () => {
         <div className="md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col items-center justify-center md:my-8 my-4 md:gap-4 gap-2">
           {listItems.map((listItem, index) => (
             <span
-              className="bg-slate-200 w-full md:p-2 p-1 md:text-xl text-base rounded-md inline-flex items-center gap-2 cursor-default hover:scale-105 ease-in-out duration-300"
+              className="bg-slate-200 w-full md:p-2 p-1 md:text-xl text-base rounded-md inline-flex items-center gap-2"
               key={index}
             >
               <BsCheck2Circle className="text-sky-700 flex-shrink-0" />
