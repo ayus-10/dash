@@ -12,8 +12,9 @@ const Pricing = () => {
       name: "free",
       monthlyPrice: "0",
       annuallyPrice: "0",
+      popular: false,
       details: [
-        "Accurate Data Management",
+        "Manage Data Accurately",
         "Expertised AI Solutions",
         "Advanced Viz Technology",
         "Free to use forever",
@@ -23,6 +24,7 @@ const Pricing = () => {
       name: "Starter",
       monthlyPrice: "6.99",
       annuallyPrice: "79.99",
+      popular: true,
       details: [
         "All previous features",
         "Predictive Analytics",
@@ -34,6 +36,7 @@ const Pricing = () => {
       name: "Expert",
       monthlyPrice: "13.99",
       annuallyPrice: "149.99",
+      popular: false,
       details: [
         "All previous features",
         "Biz Intelligence Insights",
@@ -80,7 +83,12 @@ const Pricing = () => {
         <div className="my-4 md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col items-center md:gap-8 gap-4">
           {pricingCards.map((pricingCard, index) => (
             <div
-              className="rounded-md border-2 border-sky-700 flex flex-col duration-500 w-fit p-4"
+              className={`rounded-md border-2 flex flex-col duration-500 h-fit w-fit p-4 
+                ${
+                  pricingCard.popular === true
+                    ? "border-sky-700"
+                    : "border-slate-300"
+                }`}
               key={index}
             >
               <h1 className="text-gray-700 font-normal uppercase md:text-xl text-lg">
