@@ -11,10 +11,10 @@ const Sidebar = (props) => {
     <header className="col-span-1 flex h-full flex-col bg-slate-900">
       <div className="text-xl text-white">
         <div
-          className="m-4 flex cursor-pointer items-center justify-center gap-1"
+          className="m-2 flex cursor-pointer items-center justify-center gap-1"
           onClick={() => props.onButtonClick("home")}
         >
-          <img src={Logo} alt="logo" className="h-8 w-auto lg:h-10" />
+          <img src={Logo} alt="logo" className="max-h-10" />
           <h1 className="hidden text-3xl md:block lg:text-4xl">DASH</h1>
         </div>
         <div
