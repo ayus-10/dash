@@ -47,18 +47,18 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="md:p-12 p-4 text-gray-900">
-      <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase mb-2">
+    <div className="p-4 text-gray-900 md:p-12">
+      <h1 className="mb-2 text-2xl font-medium uppercase text-sky-700 md:text-4xl">
         Pricing
       </h1>
-      <p className="md:text-lg text-base">
+      <p className="text-base md:text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae
         quisquam nihil!
       </p>
       <div className="flex flex-col items-center">
-        <div className="my-4 flex justify-center font-semibold md:text-base text-xs">
+        <div className="my-4 flex justify-center text-xs font-semibold md:text-base">
           <button
-            className={`md:px-4 px-2 py-1 outline-none border-2 border-sky-700 rounded-l-md 
+            className={`rounded-l-md border-2 border-sky-700 px-2 py-1 outline-none md:px-4 
               ${
                 paymentInterval === "monthly"
                   ? "bg-sky-700 text-white"
@@ -69,7 +69,7 @@ const Pricing = () => {
             Monthly
           </button>
           <button
-            className={`md:px-4 px-2 py-1 outline-none border-2 border-sky-700 rounded-r-md 
+            className={`rounded-r-md border-2 border-sky-700 px-2 py-1 outline-none md:px-4 
               ${
                 paymentInterval === "annually"
                   ? "bg-sky-700 text-white"
@@ -80,10 +80,10 @@ const Pricing = () => {
             Annually
           </button>
         </div>
-        <div className="my-4 md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col items-center md:gap-8 gap-4">
+        <div className="my-4 flex flex-col items-center gap-4 md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {pricingCards.map((pricingCard, index) => (
             <div
-              className={`rounded-md border-2 flex flex-col duration-500 h-fit w-fit p-4 
+              className={`flex h-fit w-fit flex-col rounded-md border-2 p-4 duration-500 
                 ${
                   pricingCard.popular === true
                     ? "border-sky-700"
@@ -91,11 +91,11 @@ const Pricing = () => {
                 }`}
               key={index}
             >
-              <h1 className="text-gray-700 font-normal uppercase md:text-xl text-lg">
+              <h1 className="text-lg font-normal uppercase text-gray-700 md:text-xl">
                 {pricingCard.name}
               </h1>
-              <div className="flex gap-1 items-center md:pb-4 pb-2 border-b border-slate-400">
-                <p className="font-semibold md:text-5xl text-4xl">
+              <div className="flex items-center gap-1 border-b border-slate-400 pb-2 md:pb-4">
+                <p className="text-4xl font-semibold md:text-5xl">
                   $
                   {paymentInterval === "monthly"
                     ? pricingCard.monthlyPrice
@@ -105,15 +105,15 @@ const Pricing = () => {
                   {paymentInterval === "monthly" ? "/month" : "/year"}
                 </p>
               </div>
-              <ul className="md:text-base text-sm md:mt-4 mt-2">
+              <ul className="mt-2 text-sm md:mt-4 md:text-base">
                 {pricingCard.details.map((detail, i) => (
-                  <li className="py-1 flex items-center gap-1" key={i}>
+                  <li className="flex items-center gap-1 py-1" key={i}>
                     <BsPatchCheckFill className="text-sky-700" />
                     {detail}
                   </li>
                 ))}
               </ul>
-              <button className="my-2 bg-sky-700 hover:bg-sky-800 ease-in-out duration-300 text-white py-2 md:text-lg rounded-sm">
+              <button className="my-2 rounded-sm bg-sky-700 py-2 text-white duration-300 ease-in-out hover:bg-sky-800 md:text-lg">
                 Learn more
               </button>
             </div>

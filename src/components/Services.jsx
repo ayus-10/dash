@@ -53,27 +53,27 @@ const Services = () => {
   ];
 
   return (
-    <div className="md:p-12 p-4">
-      <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase md:mb-4 mb-2">
+    <div className="p-4 md:p-12">
+      <h1 className="mb-2 text-2xl font-medium uppercase text-sky-700 md:mb-4 md:text-4xl">
         Services We offer
       </h1>
-      <div className="lg:grid lg:grid-cols-2 flex flex-col text-gray-900 md:gap-4 gap-2">
+      <div className="flex flex-col gap-2 text-gray-900 md:gap-4 lg:grid lg:grid-cols-2">
         {serviceItems.map((serviceItem, index) => (
           <div
-            className="border border-slate-300 p-2 md:gap-4 gap-2 rounded-md grid grid-cols-3 items-center justify-between hover:scale-105 ease-in-out duration-300 cursor-default"
+            className="grid cursor-default grid-cols-3 items-center justify-between gap-2 rounded-md border border-slate-300 p-2 duration-300 ease-in-out hover:scale-105 md:gap-4"
             key={index}
           >
-            <div className="col-span-1 rounded-md overflow-hidden h-fit w-fit">
+            <div className="col-span-1 h-fit w-fit overflow-hidden rounded-md">
               <img
                 src={serviceItem.img}
-                className="md:h-20 sm:h-16 h-12 w-auto"
+                className="h-12 w-auto sm:h-16 md:h-20"
               />
             </div>
             <div className="col-span-2">
-              <p className="font-bold md:text-lg sm:text-base text-sm">
+              <p className="text-sm font-bold sm:text-base md:text-lg">
                 {serviceItem.name}
               </p>
-              <p className="text-gray-700 text-base md:block hidden">
+              <p className="hidden text-base text-gray-700 md:block">
                 {serviceItem.brief}
               </p>
             </div>

@@ -59,32 +59,32 @@ const About = () => {
   ];
 
   return (
-    <div className="md:p-12 p-4">
-      <div className="text-gray-900 md:mb-8 mb-4">
-        <h1 className="text-sky-700 md:text-4xl text-2xl font-medium uppercase mb-2">
+    <div className="p-4 md:p-12">
+      <div className="mb-4 text-gray-900 md:mb-8">
+        <h1 className="mb-2 text-2xl font-medium uppercase text-sky-700 md:text-4xl">
           About the company
         </h1>
-        <p className="md:text-lg text-base">
+        <p className="text-base md:text-lg">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit eveniet
           dicta hic mollitia nulla ipsum, cupiditate deserunt inventore dolore
           aut aliquid quos, voluptate minima nam temporibus quis, sit deleniti
           impedit commodi! Sunt.
         </p>
       </div>
-      <h1 className="text-sky-700 md:text-3xl text-2xl uppercase text-center px-4 md:mb-4 mb-2">
+      <h1 className="mb-2 px-4 text-center text-2xl uppercase text-sky-700 md:mb-4 md:text-3xl">
         Meet our team
       </h1>
-      <div className="md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col text-gray-900 md:gap-4 gap-2">
+      <div className="flex flex-col gap-2 text-gray-900 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-3">
         {teamMembers.map((teamMember, index) => (
           <div
-            className="border border-slate-300 p-2 rounded-lg flex items-center hover:scale-105 ease-in-out duration-300 cursor-default"
+            className="flex cursor-default items-center rounded-lg border border-slate-300 p-2 duration-300 ease-in-out hover:scale-105"
             key={index}
           >
-            <div className="rounded-full overflow-hidden h-fit w-fit">
-              <img src={teamMember.img} className="md:h-20 h-16 w-auto" />
+            <div className="h-fit w-fit overflow-hidden rounded-full">
+              <img src={teamMember.img} className="h-16 w-auto md:h-20" />
             </div>
-            <div className="md:ml-6 ml-4">
-              <p className="font-bold md:text-xl text-lg">{teamMember.name}</p>
+            <div className="ml-4 md:ml-6">
+              <p className="text-lg font-bold md:text-xl">{teamMember.name}</p>
               <p className="text-gray-700">{teamMember.job}</p>
             </div>
           </div>

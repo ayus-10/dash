@@ -14,12 +14,12 @@ const App = () => {
   };
 
   return (
-    <div className="grid grid-cols-6 w-screen h-screen overflow-hidden">
+    <div className="grid h-screen w-screen grid-cols-6 overflow-hidden">
       <Sidebar
         onButtonClick={handleButtonClick}
         activeComponent={activeComponent}
       />
-      <div className="flex flex-col justify-between bg-slate-100 col-span-5 overflow-y-auto h-full">
+      <div className="col-span-5 flex h-full flex-col justify-between overflow-y-auto bg-slate-100">
         <main className="grow">
           {activeComponent === "home" && <Home />}
           {activeComponent === "about" && <About />}

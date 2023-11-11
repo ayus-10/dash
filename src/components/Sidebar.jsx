@@ -8,59 +8,59 @@ const Sidebar = (props) => {
   var active = props.activeComponent;
 
   return (
-    <header className="col-span-1 bg-slate-900 h-full flex flex-col">
-      <div className="text-white text-xl">
+    <header className="col-span-1 flex h-full flex-col bg-slate-900">
+      <div className="text-xl text-white">
         <div
-          className="flex items-center justify-center m-4 cursor-pointer gap-1"
+          className="m-4 flex cursor-pointer items-center justify-center gap-1"
           onClick={() => props.onButtonClick("home")}
         >
-          <img src={Logo} alt="logo" className="max-h-12" />
-          <h1 className="lg:text-4xl text-3xl md:block hidden">DASH</h1>
+          <img src={Logo} alt="logo" className="h-8 w-auto lg:h-10" />
+          <h1 className="hidden text-3xl md:block lg:text-4xl">DASH</h1>
         </div>
         <div
-          className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${
+          className={`m-2 flex cursor-pointer items-center justify-center gap-1 rounded-md p-2 duration-300 ease-in-out hover:bg-slate-800 ${
             active === "home" ? "bg-slate-800" : "bg-slate-700"
           }`}
           onClick={() => props.onButtonClick("home")}
         >
           <BiSolidHome className="inline flex-shrink-0" />
-          <span className="md:inline hidden">Home</span>
+          <span className="hidden md:inline">Home</span>
         </div>
         <div
-          className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${
+          className={`m-2 flex cursor-pointer items-center justify-center gap-1 rounded-md p-2 duration-300 ease-in-out hover:bg-slate-800 ${
             active === "about" ? "bg-slate-800" : "bg-slate-700"
           }`}
           onClick={() => props.onButtonClick("about")}
         >
           <MdInfo className="inline flex-shrink-0" />
-          <span className="md:inline hidden">About</span>
+          <span className="hidden md:inline">About</span>
         </div>
         <div
-          className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${
+          className={`m-2 flex cursor-pointer items-center justify-center gap-1 rounded-md p-2 duration-300 ease-in-out hover:bg-slate-800 ${
             active === "services" ? "bg-slate-800" : "bg-slate-700"
           }`}
           onClick={() => props.onButtonClick("services")}
         >
           <PiGearSixBold className="inline flex-shrink-0" />
-          <span className="md:inline hidden">Services</span>
+          <span className="hidden md:inline">Services</span>
         </div>
         <div
-          className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${
+          className={`m-2 flex cursor-pointer items-center justify-center gap-1 rounded-md p-2 duration-300 ease-in-out hover:bg-slate-800 ${
             active === "pricing" ? "bg-slate-800" : "bg-slate-700"
           }`}
           onClick={() => props.onButtonClick("pricing")}
         >
           <BiDollarCircle className="inline flex-shrink-0" />
-          <span className="md:inline hidden">Pricing</span>
+          <span className="hidden md:inline">Pricing</span>
         </div>
         <div
-          className={`hover:bg-slate-800 ease-in-out duration-300 p-2 m-2 cursor-pointer rounded-md flex items-center justify-center gap-1 ${
+          className={`m-2 flex cursor-pointer items-center justify-center gap-1 rounded-md p-2 duration-300 ease-in-out hover:bg-slate-800 ${
             active === "contact" ? "bg-slate-800" : "bg-slate-700"
           }`}
           onClick={() => props.onButtonClick("contact")}
         >
           <BiSupport className="inline flex-shrink-0" />
-          <span className="md:inline hidden">Contact</span>
+          <span className="hidden md:inline">Contact</span>
         </div>
       </div>
     </header>
