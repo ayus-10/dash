@@ -1,6 +1,6 @@
 # About
 
-This is a single page application built using React(Vite) and Tailwind CSS.
+This is a landing page template created using React JS and Tailwind CSS.
 
 ![Demo Image](https://www.aayushupreti.com.np/assets/dash-2c01ca49.png)
 
